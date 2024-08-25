@@ -8,7 +8,7 @@ body, h1, h2, form, label, input, button {
 /* Basic styling for the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Remove background image */
+    background: linear-gradient(to bottom right, #fffacd, #ffd700); /* Light yellow to light orange gradient */
     color: #333;
     display: flex;
     justify-content: center;
@@ -26,11 +26,13 @@ body {
     padding: 20px;
     width: 100%;
     max-width: 100%; /* Full width */
-    overflow: auto; /* Ensure container can scroll if needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 90vh; /* Limit the height to avoid overflow issues */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 /* Heading styling */
 h1 {
@@ -42,11 +44,19 @@ h1 {
 /* Form styling */
 form {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
-    gap: 10px; /* Space between items */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Match the container background */
+    z-index: 10; /* Ensure it stays on top */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Label styling */
 label {
