@@ -1,0 +1,114 @@
+/* Reset default browser styles */
+body, h1, h2, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Remove background image */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto; /* Ensure scrollability */
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 100%; /* Full width */
+    overflow: auto; /* Ensure container can scroll if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #7f8c8d; /* Gray color for heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Label styling */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+    flex: 1 1 120px; /* Label width */
+}
+
+/* Input styling */
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 1 1 120px; /* Input width */
+    max-width: 200px; /* Max width for responsiveness */
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1 1 120px; /* Button width */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Summary styling */
+#summary {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#summary h2 {
+    color: #7f8c8d; /* Gray color for summary headings */
+    margin-bottom: 10px;
+}
+
+#area-summary, #cost-summary, #total-summary {
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#area-summary {
+    color: #e67e22;
+}
+
+#cost-summary {
+    color: #27ae60;
+}
+
+#total-summary {
+    color: #e74c3c;
+}

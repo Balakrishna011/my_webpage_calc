@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area and Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Area and Cost Calculator</h1>
+        <form id="calculator-form">
+            <label for="length">Length:</label>
+            <input type="number" id="length" step="any" required>
+            
+            <label for="width">Width:</label>
+            <input type="number" id="width" step="any" required>
+            
+            <label for="num-similar">Number of similar shelves:</label>
+            <input type="number" id="num-similar" required>
+            
+            <label for="price-per-unit">Price per unit area:</label>
+            <input type="number" id="price-per-unit" step="any" required>
+            
+            <button type="button" onclick="addShelf()">Add Shelf</button>
+        </form>
+        <div id="summary">
+            <h2>Summary</h2>
+            <div id="area-summary"></div>
+            <div id="cost-summary"></div>
+            <div id="total-summary"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
