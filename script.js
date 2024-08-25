@@ -57,9 +57,11 @@ function displaySummary() {
     document.getElementById('area-summary').innerHTML = areaSummary;
     document.getElementById('cost-summary').innerHTML = costSummary;
     document.getElementById('total-summary').innerHTML = `
-        <h3>Total Area of All Shelves Combined: ${totalArea} sqin</h3>
-        <h3>Total Cost of All Shelves Combined: $${totalCost.toFixed(2)}</h3>`;
+        <h3>Total Area of All Shelves Combined: <span style="color: green; background-color: #ffffcc;">${totalArea} sqin</span></h3>
+        <h3>Total Cost of All Shelves Combined: <span style="color: green;background-color: #ffffcc;">$${totalCost.toFixed(2)}</span></h3>`;
 }
+
+
 
 // Function to remove a shelf
 function removeShelf(index) {
@@ -93,13 +95,13 @@ function handleKeyNavigation(event) {
             const nextIndex = currentIndex + 1;
             inputs[nextIndex].focus();
         }
-    } else if (event.key === 'ArrowDown') {
+    } else if (event.key === 'ArrowRight') {
         event.preventDefault();
         
         // Move focus to the next input field
         const nextIndex = currentIndex + 1 < inputs.length ? currentIndex + 1 : currentIndex;
         inputs[nextIndex].focus();
-    } else if (event.key === 'ArrowUp') {
+    } else if (event.key === 'ArrowLeft') {
         event.preventDefault();
         
         // Move focus to the previous input field
